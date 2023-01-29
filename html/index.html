@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculumx</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9edd0aa3d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="encabezado">
+      <h1 id="nombre">
+    
+      </h1>
+
+      <script>
+        const persona = '{"apellido":" Nichols " , "nombre":"Jennie "}';
+        const obj1 = JSON.parse(persona);
+        console.log(obj1);
+        document.getElementById("nombre").innerHTML = 
+        obj1.apellido+", "+obj1.nombre;
+      </script>
+    </div>
+
+    <div class="subencabezado">
+      <h3>Curriculum Vitae</h3>        
+    </div>
+    
+    <div id="contacto">
+      <ul class="nav">
+        <li><a href="#"><i class="fa-regular fa-envelope"></i> correo electrónico</a>
+          <ul>
+            <li><a href="#">jennie.nichols@example.com</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa-regular fa-envelope"></i> teléfono</a>
+          <ul>
+            <li><a href="#">(272) 790-0888</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-mobile-screen"></i> celular</a>
+          <ul>
+            <li><a href="#">(489) 330-2385</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> numero de seguro social</a>
+          <ul>
+            <li><a href="#">405-88-3636</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    
+    <div class="row">
+      <div class="columnaizquierda">
+        <div class="cardizquierda">
+          <h2>DATOS PERSONALES</h2>
+          
+          <div class="img">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Foto de perfil" height="250px" />
+          </div>
+          
+          <p>Foto de perfil, año 2023</p>
+          
+          <div class="cardizquierda">
+            <p id="datos">
+              
+            </p>
+            <script>
+              const datos = '{"género": "femenino" , "fecha": "08-03-1992" , "edad": "30"}';
+              const obj2 = JSON.parse(datos);
+              console.log(obj2);
+              document.getElementById("datos").innerHTML = 
+              "Género: "+obj2.género+"<br>Fecha de nacimiento: "+obj2.fecha+"<br>Edad: "+obj2.edad; 
+            
+            </script>
+          </div>
+        </div>
+    
+        <div class="cardizquierda">
+          <h3><i class="fa-solid fa-people-roof"></i> Personas a cargo</h3>
+          <p id="hijos">
+    
+          </p>
+          <script>
+          const hijos = '{"cantidad": "1", "fecha": "09-07-2007" , "edad": "5"}';
+          const obj3 = JSON.parse(hijos);
+          console.log(obj3);
+          document.getElementById("hijos").innerHTML = 
+          "Cantidad de hijos a cargo: "+obj3.cantidad+"<br>Fecha de nacimiento: "+obj3.fecha+"<br>Edad: "+obj3.edad;
+          </script>
+        </div>
+    
+        <div class="cardizquierda">
+          <h2><i class="fa-solid fa-message"></i> Acerca de mi</h2>
+          <p>Las 3 habilidades con las que me caracterizo son :</p>
+          <div class="ul a">
+            <p id="habilidades">
+    
+            </p>
+            <script>
+              const habilidades = '{"hab1": "Autodidacta" , "hab2": "Habilidad para trabajo en equipo" , "hab3": "Manejo de programa de diseño"}';
+              const obj4 = JSON.parse(habilidades);
+              console.log(obj4);
+              document.getElementById("habilidades").innerHTML = 
+              " <li>"+obj4.hab1+".</li><li>"+obj4.hab2+".</li><li>"+obj4.hab3+".</li>";
+            </script>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columnaderecha">
+        
+        <div class="card">
+          <h2><i class="fa-solid fa-graduation-cap"></i> Estudios universitarios</h2>
+          <div class="card">
+            <p id="formacion">
+    
+            </p>
+            <script>
+              const estudiosuniversitarios = '{"titulo": "Ingenieria en sofware" , "instituto": "Universidad de Stanford" , "fecha": "año de inicio/año de fin: 2011-2017"}';
+              const obj5 = JSON.parse(estudiosuniversitarios);
+              console.log(obj5);
+              document.getElementById("formacion").innerHTML = 
+              obj5.titulo+"<br> Instituto: "+obj5.instituto+" <br> "+obj5.fecha; 
+            
+            </script>
+          </div>
+        </div>
+        
+        <hr>
+    
+        <div class="card">
+          <h2><i class="fa-solid fa-school"></i> High School</h2>
+          <div class="card">
+            <p id="hs">
+    
+            </p>
+            <script>
+              const hs = '{"highschool": "Bachillerato en gestion de las organizaciones" , "instituto": "Rosy Mound School" , "fecha": "año de inicio/año de fin: 2008-2011"}';
+              const obj6 = JSON.parse(hs);
+              console.log(obj6);
+              document.getElementById("hs").innerHTML = 
+              "Titulo: "+obj6.highschool+"<br> Instituto: "+obj6.instituto+" <br> "+obj6.fecha; 
+            
+            </script>
+          </div>
+        </div>
+
+        <hr>
+    
+        <div class="card">
+          <h2><i class="fa-solid fa-chalkboard"></i> Cursos</h2>
+          <div class="card">
+            <p id="cursos">
+    
+            </p>
+            <script>
+              const curso1 = '{"nombre": "Programacion desde 0" , "instituto": "Egg" , "fecha": "año de inicio/año de fin: 2017-2017"}';
+              const obj7 = JSON.parse(curso1);
+              console.log(obj7);
+              const curso2 = '{"nombre": "Java Script" , "instituto": "Openbootcamp" , "fecha": "año de inicio/año de fin: 2018-2020" , "curso3": "HTML y CSS" , "instituto3": "Academia Ticmas" , "fecha3": "año de inicio/año de fin: 2020-2023"}';
+              const obj8 = JSON.parse(curso2);
+              console.log(obj8);
+              const curso3 = '{"nombre": "HTML y CSS" , "instituto": "Academia Ticmas" , "fecha": "año de inicio/año de fin: 2020-2023"}';
+              const obj9 = JSON.parse(curso3);
+              console.log(obj9);
+              document.getElementById("cursos").innerHTML = 
+              " <li>"+obj7.nombre+"<br> Instituto: "+obj7.instituto+" <br> "+obj7.fecha+" <br> <br> </li> "+
+              " <li>"+obj8.nombre+"<br> Instituto: "+obj8.instituto+" <br> "+obj8.fecha+" <br> <br> </li> "+
+              " <li>"+obj9.nombre+"<br> Instituto: "+obj9.instituto+" <br> "+obj9.fecha+" </li>"; 
+            
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <h2 id="redes">Mis redes</h2>
+      <div id="nav-redes">
+        <p id="instagram"><i class="fa-brands fa-instagram"></i></p> 
+        <p id="twitter"><i class="fa-brands fa-twitter"></i></p> 
+        <p id="facebook"><i class="fa-brands fa-facebook"></i></p>
+        <p id="linkedin"><i class="fa-brands fa-linkedin"></i></p> 
+      </div>
+        
+      <div id="bot-redes">
+        <button type="button" id="botonInstagram">Mostrar Usuario</button>
+        <button type="button" id="botonTwitter">Mostrar Usuario</button>
+        <button type="button" id="botonFacebook">Mostrar Usuario</button>
+        <button type="button" id="botonLinkedin">Mostrar Usuario</button>
+      </div>
+     
+      <script src="/js/boton.js"></script>  
+    </div>
+</body>
+</html>

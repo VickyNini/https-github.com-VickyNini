@@ -1,0 +1,79 @@
+{
+    "persona": {
+        "género": "femenino",
+        "nombre": "Jennie",
+        "apellido": "Nichols",
+        "fecha": "08-03-1992",
+        "edad": "30"
+    },
+
+    "hijos":{
+        "cantidad": "1",
+        "fecha": "09-07-2007",
+        "edad": "5"
+    },
+    
+    "direccion":{
+        "calle":{
+            "nombre": "Valwood Pkwy",
+            "numero": "8929"
+        },
+        "ciudad": " facturación ",
+        "estado": " Míchigan ",
+        "país": " Estados Unidos ",
+        "código postal": " 63104 "
+    },
+
+    "contacto":{
+        "correo electrónico": " jennie.nichols@example.com ",
+        "teléfono": " (272) 790-0888 ",
+        "celular": " (489) 330-2385 ",
+        " Número de Seguro Social " : " 405-88-3636 "
+    },
+
+    "redes":{
+        "Instagram": "@Jenn.Nicols",
+        "Twitter": "@N.Jenn",
+        "Facebook": "Jany Nichols",
+        "Linkedin": "Nichols, Jannie"
+    },
+
+    "formacion":{
+        "Universidad":{
+            "titulo": "Ingenieria en sofware",
+            "instituto": "Universidad de Stanford",
+            "fecha": "año de inicio/año de fin: 2011-2017"
+        },
+        "Highschool":{
+            "titulo": "Bachillerato en gestion de las organizaciones",
+            "instituto": "Rosy Mound School",
+            "fecha": "año de inicio/año de fin: 2008-2011"
+        }
+    },
+
+    "cursos": {
+        "curso1": {
+            "nombre":"Programacion desde 0",
+            "instituto": "Egg",
+            "fecha1": "año de inicio/año de fin: 2017-2017"
+        },
+        "curso2": {
+            "nombre":"Java Script",
+            "instituto": "Openbootcamp",
+            "fecha2": "año de inicio/año de fin: 2018-2020"
+        },
+        "curso 3": {
+            "nombre":"HTML y CSS",
+            "instituto": "Academia Ticmas",
+            "fecha2": "año de inicio/año de fin: 2020-2023"
+        }
+    },
+
+    "habilidades":{
+        "hab1": "Autodidacta",
+        "hab2": "Habilidad para trabajo en equipo",
+        "hab3": "Manejo de programa de diseño"
+    },
+
+    "fotografía": "https://randomuser.me/api/portraits/women/31.jpg"    
+}
